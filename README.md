@@ -1,5 +1,20 @@
 # google-java-format
 
+## Journal Release Notes
+
+```
+# Set version
+mvn versions:set -DnewVersion=1.8.J1 -DgenerateBackupPoms=false
+
+# Build
+mvn clean install -DskipTests=true -Dmaven.javadoc.skip=true
+
+# Deploy
+mvn deploy -DskipTests=true -Dmaven.javadoc.skip=true
+```
+
+## Overview
+
 `google-java-format` is a program that reformats Java source code to comply with
 [Google Java Style][].
 

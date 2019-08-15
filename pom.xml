@@ -28,7 +28,7 @@
   <groupId>com.google.googlejavaformat</groupId>
   <artifactId>google-java-format-parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.8-SNAPSHOT</version>
+  <version>1.8.J1</version>
 
   <modules>
     <module>core</module>
@@ -272,5 +272,18 @@
       </build>
     </profile>
   </profiles>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>canopy-nexus</id>
+      <name>Canopy Jenkins Snapshots</name>
+      <url>https://nexus.canopy.engineering/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>canopy-nexus</id>
+      <name>Canopy Jenkins Releases</name>
+      <url>https://nexus.canopy.engineering/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
 
 </project>
